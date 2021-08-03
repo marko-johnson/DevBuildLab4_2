@@ -9,7 +9,6 @@ namespace Lab4_2_ObjectPractice
         private string Description;
         private decimal Price;
 
-
         public MenuItem()
         {
             Console.WriteLine("\nI'm inside the DEFAULT constructor");
@@ -21,21 +20,12 @@ namespace Lab4_2_ObjectPractice
             //Name = _Name;
             //Description = _Description;
             //Price = _Price;
-
             setID(_ID);
             setName(_Name);
             setDescription(_Description);
             setPrice(_Price);
             
         }
-
-        //public MenuItem(int _ID, string _Name, string _Description, decimal _Price)
-        //{
-        //    ID = _ID;
-        //    Name = _Name;
-        //    Description = "";
-        //    Price = _Price;
-        //}
 
         // ID setter and getter
         public void setID(int _ID)
@@ -48,7 +38,6 @@ namespace Lab4_2_ObjectPractice
             return ID;
         }
 
-
         // Name setter and getter
         public void setName(string _Name)
         {
@@ -59,8 +48,6 @@ namespace Lab4_2_ObjectPractice
         {
             return Name;
         }
-
-
 
         // Description setter and getter
         public void setDescription (string _Description)
@@ -94,8 +81,6 @@ namespace Lab4_2_ObjectPractice
         }
 
 
-
-
         public override string ToString()
         {
             return $"\n-----------------ToString() Menu-----------------\nMenu Items\nID: {ID}\nName: {Name}\nDescription: {Description}\nPrice: ${Price}\n";
@@ -114,8 +99,6 @@ namespace Lab4_2_ObjectPractice
             string menu = m1.ToString();
             Console.WriteLine(menu);
 
-
-
             MenuItem m2 = new MenuItem(2, "cheese", "dairy", 100.40m);                       
             Console.WriteLine(m2.getID());
             Console.WriteLine(m2.getName());
@@ -124,8 +107,6 @@ namespace Lab4_2_ObjectPractice
             string menu2 = m2.ToString();
             Console.WriteLine(menu2);
 
-
-
             MenuItem m3 = new MenuItem(2, "turkey", "poultry", 0.40m);
             Console.WriteLine(m3.getID());
             Console.WriteLine(m3.getName());
@@ -133,8 +114,6 @@ namespace Lab4_2_ObjectPractice
             Console.WriteLine(m3.getPrice());
             string menu3 = m3.ToString();
             Console.WriteLine(menu3);
-
-
 
             MenuItem m4 = new MenuItem();
             Console.WriteLine(m4.getID());
