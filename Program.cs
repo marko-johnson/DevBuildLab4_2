@@ -2,6 +2,14 @@
 
 namespace Lab4_2_ObjectPractice
 {
+    class Rectangle
+    {
+        public int L;
+        public int W;
+
+        
+
+    }
     class MenuItem
     {
         private int ID;
@@ -24,6 +32,8 @@ namespace Lab4_2_ObjectPractice
             setName(_Name);
             setDescription(_Description);
             setPrice(_Price);
+
+
             
         }
 
@@ -96,30 +106,39 @@ namespace Lab4_2_ObjectPractice
             Console.WriteLine(m1.getName());
             Console.WriteLine(m1.getDescription());
             Console.WriteLine(m1.getPrice());
-            string menu = m1.ToString();
-            Console.WriteLine(menu);
+            
 
             MenuItem m2 = new MenuItem(2, "cheese", "dairy", 100.40m);                       
             Console.WriteLine(m2.getID());
             Console.WriteLine(m2.getName());
             Console.WriteLine(m2.getDescription());
             Console.WriteLine(m2.getPrice());
-            string menu2 = m2.ToString();
-            Console.WriteLine(menu2);
+            
 
-            MenuItem m3 = new MenuItem(2, "turkey", "poultry", 0.40m);
+            MenuItem m3 = new MenuItem(3, "turkey", "poultry", 0.40m);
             Console.WriteLine(m3.getID());
             Console.WriteLine(m3.getName());
             Console.WriteLine(m3.getDescription());
             Console.WriteLine(m3.getPrice());
-            string menu3 = m3.ToString();
-            Console.WriteLine(menu3);
+            
 
             MenuItem m4 = new MenuItem();
             Console.WriteLine(m4.getID());
             Console.WriteLine(m4.getName());
             Console.WriteLine(m4.getDescription());
             Console.WriteLine(m4.getPrice());
+            
+
+
+            string menu = m1.ToString();
+            Console.WriteLine(menu);
+
+            string menu2 = m2.ToString();
+            Console.WriteLine(menu2);
+
+            string menu3 = m3.ToString();
+            Console.WriteLine(menu3);
+
             string menu4 = m4.ToString();
             Console.WriteLine(menu4);
         }
